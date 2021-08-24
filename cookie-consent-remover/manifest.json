@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "Cookie-Consent-Remover",
+    "description": "Cookie Consent Remover A small plugin that you only enter once and can be used for sites that ask you for cookie permission.",
+    "version": "1.0",
+    "icons": { "16": "icn.png" ,
+      "48": "icn.png",
+     "128": "icn.png"},
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+  
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ], 
+        "js": ["background.js"]
+      }
+    ],
+    
+    "browser_action": {
+      "default_icon": "icn.png",
+      "default_popup": "popup.html"
+    },
+  
+    "permissions":[
+      "storage",
+      "contextMenus",
+      "notifications",
+      "tabs"
+    ]
+      
+    
+  
+  }

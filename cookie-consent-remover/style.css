@@ -1,0 +1,13 @@
+body {
+    background: #FDC830;  
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  
+    background: linear-gradient(to right, #F37335, #FDC830); 
+}
+
+.button_f_onetrust {
+    height:50px;
+    width:100px;
+    border-radius: 3%;
+    border:0px #000 solid;
+}
+
